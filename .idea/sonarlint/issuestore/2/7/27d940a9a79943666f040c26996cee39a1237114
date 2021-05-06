@@ -1,0 +1,10 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(­ûæÕüÿÿÿÿ8¼„÷î/
+D
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8‚‡ğî/
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‹­Æûÿÿÿÿ8²ò´Î’/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ï¤‚Ê8½Íîî/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(É…ûÿÿÿÿ8ü±èî/
+l
+java:S2095"JUse try-with-resources or close this "ServerSocket" in a "finally" clause.(Ù«×ıûÿÿÿÿ8¤¾íî/

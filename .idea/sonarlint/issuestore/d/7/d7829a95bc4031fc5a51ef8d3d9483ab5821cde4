@@ -1,0 +1,13 @@
+
+v
+java:S1104"TMake listView a static final constant or non-public and provide accessors if needed.(ßü’şıÿÿÿÿ8¢ıÀò“/
+s
+java:S1450"QRemove the "is" field and declare it as a local variable in the relevant methods.(‹ÇŒ÷øÿÿÿÿ8¢ıÀò“/
+a
+java:S2095+"DUse try-with-resources or close this "Socket" in a "finally" clause.(Ñ‹¼Á8¢ıÀò“/
+s
+java:S1104"QMake input a static final constant or non-public and provide accessors if needed.(×ğ÷µüÿÿÿÿ8¢ıÀò“/
+O
+java:S1172"2Remove this unused method parameter "actionEvent".(ËÖŞÃ8¢ıÀò“/
+M
+java:S1068"+Remove this unused "network" private field.(ªÙ‚Ğüÿÿÿÿ8¢ıÀò“/

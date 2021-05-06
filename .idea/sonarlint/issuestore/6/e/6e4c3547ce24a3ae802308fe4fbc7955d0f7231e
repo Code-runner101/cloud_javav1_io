@@ -1,0 +1,28 @@
+
+g
+java:S2095Š"DUse try-with-resources or close this "Stream" in a "finally" clause.(Á˜Úúÿÿÿÿ8ô°úğ‘/
+z	java:S135D"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8ıö–î‘/
+V	java:S106…"9Replace this use of System.out or System.err by a logger.(º»’¡8ô°úğ‘/
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(˜çèç8ıö–î‘/
+W
+java:S1141n"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ıö–î‘/
+U	java:S106["9Replace this use of System.out or System.err by a logger.(º»’¡8ıö–î‘/
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(øµı—ûÿÿÿÿ8ıö–î‘/
+^	java:S125°"<This block of commented-out lines of code should be removed.(„÷ş§üÿÿÿÿ8ô°úğ‘/
+[	java:S106¸"9Replace this use of System.out or System.err by a logger.(åı•‹üÿÿÿÿ8ô°úğ‘/
+I
+java:S1075£"&Remove this hard-coded path-delimiter.(‡ç—İúÿÿÿÿ8ô°úğ‘/
+T
+java:S2696©"6Make the enclosing method "static" or remove this set.(¾íŠœ8 ßÁñ‘/
+b
+java:S2095“"DUse try-with-resources or close this "Stream" in a "finally" clause.(ÀáÍâ8ô°úğ‘/
+H
+java:S1172´"*Remove this unused method parameter "key".(•„ğ½8ô°úğ‘/
+]	java:S125z"<This block of commented-out lines of code should be removed.(ƒ£ä£ùÿÿÿÿ8¹Ä·ğ‘/
+U	java:S106$"9Replace this use of System.out or System.err by a logger.(ˆ¯ó¨8ıö–î‘/
+Y
+java:S2696¡"6Make the enclosing method "static" or remove this set.(­Ÿìôıÿÿÿÿ8‡Íò‘/
+|
+java:S1488¬"^Immediately return this expression instead of assigning it to the temporary variable "newDir".(“¦ÌĞ8¬Ä€ó‘/
+}
+java:S1488¤"_Immediately return this expression instead of assigning it to the temporary variable "newFile".(”ŸĞä8„‚ˆó‘/

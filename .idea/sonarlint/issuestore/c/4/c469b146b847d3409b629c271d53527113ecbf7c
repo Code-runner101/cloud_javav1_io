@@ -1,0 +1,30 @@
+
+v
+java:S1104"TMake listView a static final constant or non-public and provide accessors if needed.(ßü’şıÿÿÿÿ8œË¾ø/
+X	java:S1257"<This block of commented-out lines of code should be removed.(ó×ÎÜ8İ×»”/
+a
+java:S2095N"DUse try-with-resources or close this "Socket" in a "finally" clause.(û‹¡…8Ê’–“/
+v
+java:S1104"YMake listViewCloud a static final constant or non-public and provide accessors if needed.(Ï—õ»8Ìç´Ñ’/
+a
+java:S2095a"DUse try-with-resources or close this "Stream" in a "finally" clause.(€´Õö8Šù¼”/
+s
+java:S1104"QMake input a static final constant or non-public and provide accessors if needed.(×ğ÷µüÿÿÿÿ8éÉË“/
+U	java:S106q"9Replace this use of System.out or System.err by a logger.(äÈ¥8¡¢Á”/
+T
+java:S1172 "2Remove this unused method parameter "actionEvent".(—‡İèøÿÿÿÿ8”ü”“/
+O
+java:S11726"2Remove this unused method parameter "actionEvent".(æıİÕ8´Áˆ“/
+7
+java:S1220""Move this file to a named package.8œË¾ø/
+t
+java:S1104"RMake sendIn a static final constant or non-public and provide accessors if needed.(ˆá°êùÿÿÿÿ8‚®âË’/
+ƒ
+java:S18456"fRename method "sendOut" to prevent any misunderstanding/clash with field "sendOut" defined on line 25.(æıİÕ8’›ó“/
+u
+java:S1104"SMake sendOut a static final constant or non-public and provide accessors if needed.(¿°ŠÂşÿÿÿÿ8Ç‘éË’/
+a
+java:S2095X"DUse try-with-resources or close this "Stream" in a "finally" clause.(»‡ ¾8–æÊ‰”/
+X	java:S125T"<This block of commented-out lines of code should be removed.(ó×ÎÜ8ŸÕº”/
+H
+java:S1128"+Remove this unused import 'lombok.Builder'.(§’Ğß8 ı©ó“/
