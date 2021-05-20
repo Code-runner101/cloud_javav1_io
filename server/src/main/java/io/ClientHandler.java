@@ -3,6 +3,7 @@ package io;
 import javafx.application.Platform;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
+import model.Message;
 
 import java.io.DataInputStream;
 import java.io.DataOutput;
@@ -22,6 +23,7 @@ public class ClientHandler implements Runnable {
     protected final Server server;
     protected DataInputStream inputStream;
     protected DataOutputStream outputStream;
+    private String nickname;
 
     public ClientHandler(Socket socket, Server server) {
         this.socket = socket;
@@ -31,12 +33,23 @@ public class ClientHandler implements Runnable {
     public void init () throws IOException {
         inputStream = new DataInputStream(socket.getInputStream());
         outputStream = new DataOutputStream(socket.getOutputStream());
-
     }
 
     public void run() {
         try {
             init();
+            String str = inputStream.readUTF();
+            if (str.startsWith("/"))
+                if (str.startsWith(Message.AUTH)){
+                    String[] token = str.split("\\s");
+                    String newNick = server.getAuthService()
+                            .getNicknameByLoginAndPassword(token[1], token[2]);
+                    if (newNick != null){
+                        nickname = newNick;
+                        sendMessage(Message.AUTH_OK + " " + nickname);
+                        server.subscribe(this);
+                    }
+                }
             System.out.println("connected");
             while (true) {
                 String message = inputStream.readUTF();
@@ -46,6 +59,8 @@ public class ClientHandler implements Runnable {
         } catch (IOException e) {
             System.err.println("connection lost");
             server.kickClient(this);
+        } catch (Exception e) {
+            System.err.println("client couldn't auth");
         }
     }
 
@@ -60,5 +75,9 @@ public class ClientHandler implements Runnable {
         inputStream.close();
         socket.close();
         System.out.println("streams were closed");
+    }
+
+    public String getNickname() {
+        return nickname;
     }
 }

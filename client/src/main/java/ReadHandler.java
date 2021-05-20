@@ -24,5 +24,4 @@ public class ReadHandler implements Runnable{
             System.err.println("Exception while read");
         }
     }
-
 }

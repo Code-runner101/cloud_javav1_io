@@ -9,10 +9,6 @@ T
 $client/src/main/java/Controller.java,c/4/c469b146b847d3409b629c271d53527113ecbf7c
 W
 'server/src/main/java/io/FileSender.java,7/0/70b939ae4b509e7c48e7b7ab9334ade516318864
-^
-.server/src/main/java/nio/NioServerStarter.java,4/f/4f63023880f177f03e207c6b33d568ab37f46b13
-W
-'server/src/main/java/nio/NioServer.java,6/e/6e4c3547ce24a3ae802308fe4fbc7955d0f7231e
 :
 
 log4j2.xml,e/b/ebe6a3928074fe7cd4e9c659afbc0076ea5c3914
@@ -52,3 +48,9 @@ S
 ,client/src/main/java/netty/NettyNetwork.java,5/f/5f9176ad0dc3f01017192c6036705a89edc61d95
 _
 /client/src/main/java/netty/ControllerNetty.java,d/7/d7829a95bc4031fc5a51ef8d3d9483ab5821cde4
+l
+<server/src/main/java/netty/serialize/NettyServerStarter.java,7/9/799924eea125ed8d96738ed72ab8fc732305acd1
+c
+3server/src/main/java/authorization/AuthService.java,b/4/b40ca9bf9bd0478f668f19ef7490996e0ef7c321
+i
+9server/src/main/java/authorization/SimpleAuthService.java,b/6/b69ad8c622714fe0dce2ba17fd819c4b32908386

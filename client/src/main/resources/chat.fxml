@@ -5,24 +5,36 @@
 <?import javafx.scene.text.*?>
 
 <?import java.net.URL?>
-
-
 <AnchorPane prefHeight="565.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
-    <ListView fx:id="listView" layoutX="478.0" layoutY="64.0" prefHeight="394.0" prefWidth="300.0" />
-    <TextField fx:id="input" layoutX="20.0" layoutY="481.0" prefHeight="71.0" prefWidth="759.0" promptText="Operation status..." />
-    <Button fx:id="sendIn" layoutX="348.0" layoutY="173.0" mnemonicParsing="false" onAction="#sendOn" prefHeight="44.0" prefWidth="97.0" text="&lt; SEND" />
-    <ListView fx:id="listViewCloud" layoutX="21.0" layoutY="66.0" prefHeight="394.0" prefWidth="300.0" />
-    <Label layoutX="21.0" layoutY="30.0" prefHeight="28.0" prefWidth="300.0" text="                     Cloud Files" textAlignment="CENTER">
-        <font>
-            <Font name="System Bold" size="17.0" />
-        </font>
-    </Label>
-    <Label layoutX="471.0" layoutY="30.0" prefHeight="28.0" prefWidth="300.0" text="                       Your Files" textAlignment="CENTER">
-        <font>
-            <Font name="System Bold" size="17.0" />
-        </font></Label>
-    <Button fx:id="sendOut" onAction="#sendOut" layoutX="348.0" layoutY="261.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="97.0" text="GET &gt;" />
+
     <stylesheets>
-        <URL value="@/style.css"/>
+        <URL value="client/src/main/resources/style.css"/>
     </stylesheets>
+
+    <AnchorPane fx:id="sendingPanel">
+        <ListView fx:id="listView" layoutX="478.0" layoutY="64.0" prefHeight="394.0" prefWidth="300.0" />
+        <TextField fx:id="input" layoutX="20.0" layoutY="481.0" prefHeight="71.0" prefWidth="759.0" promptText="Operation status..." />
+        <Button fx:id="sendIn" layoutX="348.0" layoutY="173.0" mnemonicParsing="false" onAction="#sendOn" prefHeight="44.0" prefWidth="97.0" text="&lt; SEND" />
+        <ListView fx:id="listViewCloud" layoutX="21.0" layoutY="66.0" prefHeight="394.0" prefWidth="300.0" />
+        <Label layoutX="21.0" layoutY="30.0" prefHeight="28.0" prefWidth="300.0" text="                     Cloud Files" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="471.0" layoutY="30.0" prefHeight="28.0" prefWidth="300.0" text="                       Your Files" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font></Label>
+        <Button fx:id="sendOut" layoutX="348.0" layoutY="261.0" mnemonicParsing="false" onAction="#sendOut" prefHeight="44.0" prefWidth="97.0" text="GET &gt;" />
+    </AnchorPane>
+
+    <AnchorPane fx:id="authPanel" />
+     <PasswordField fx:id="passwordField" layoutX="242.0" layoutY="235.0" prefHeight="27.0" prefWidth="317.0" promptText="entry your login..." />
+     <TextField fx:id="loginFiled" layoutX="242.0" layoutY="187.0" prefHeight="27.0" prefWidth="317.0" promptText="entry your password..." />
+   <Label layoutX="303.0" layoutY="122.0" prefHeight="27.0" prefWidth="196.0" text="         Authentication ">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Label>
+
 </AnchorPane>
