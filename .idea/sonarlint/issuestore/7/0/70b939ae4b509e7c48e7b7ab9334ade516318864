@@ -1,23 +1,29 @@
 
-B
-java:S1075)"&Remove this hard-coded path-delimiter.(¯Êçf8áññ/
 W
-java:S11419"5Extract this nested try block into a separate method.(¦ƒ³Åıÿÿÿÿ8—Ö›”/
-R
-java:S1141,"5Extract this nested try block into a separate method.(Ï¿õ÷8Õ¼™“/
-U	java:S106D"9Replace this use of System.out or System.err by a logger.(²ß´Ú8—Ö›”/
-Z	java:S1067"9Replace this use of System.out or System.err by a logger.(ÿ¢Ù¾üÿÿÿÿ8Õ¼™“/
-T	java:S106("9Replace this use of System.out or System.err by a logger.(Œ‚¾8ø¨«ñ/
-D
-java:S2189#""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8øŞ»ğ/
-V
-java:S1128"4Remove this unused import 'java.io.DataInputStream'.(”•úºÿÿÿÿÿ8‚ªåò“/
+java:S1128"5Remove this unused import 'java.io.DataOutputStream'.(¸Îáíıÿÿÿÿ8‚ªåò“/
+X	java:S125"<This block of commented-out lines of code should be removed.(ó×ÎÜ8‚€µ¤˜/
+S
+java:S1128"6Remove this unused import 'authorization.AuthService'.(Õ—¸ú8€ÎÄÒ˜/
+]	java:S125"<This block of commented-out lines of code should be removed.(ÏàÛ•úÿÿÿÿ8‚€µ¤˜/
+T	java:S106+"9Replace this use of System.out or System.err by a logger.(Œ‚¾8ø¨«ñ/
 Z
-java:S1197"8Move the array designator from the variable to the type.(À–şÜÿÿÿÿÿ8ÈëÚğ/
-U	java:S106&"9Replace this use of System.out or System.err by a logger.(Â¾ƒí8§Ö¬ñ/
+java:S1197"8Move the array designator from the variable to the type.(À–şÜÿÿÿÿÿ8ÈëÚğ/
 C
-java:S1075*"&Remove this hard-coded path-delimiter.(åÄÓÉ8Õ¼™“/
-U	java:S106G"9Replace this use of System.out or System.err by a logger.(£‰ìÜ8Õ¼™“/
-Z	java:S106K"9Replace this use of System.out or System.err by a logger.(¾Ô²Ùúÿÿÿÿ8Õ¼™“/
+java:S1075-"&Remove this hard-coded path-delimiter.(åÄÓÉ8Õ¼™“/
+B
+java:S1075,"&Remove this hard-coded path-delimiter.(¯Êçf8áññ/
+D
+java:S2189&""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8øŞ»ğ/
 W
-java:S1128"5Remove this unused import 'java.io.DataOutputStream'.(¸Îáíıÿÿÿÿ8‚ªåò“/
+java:S1141<"5Extract this nested try block into a separate method.(¦ƒ³Åıÿÿÿÿ8—Ö›”/
+Z	java:S106N"9Replace this use of System.out or System.err by a logger.(¾Ô²Ùúÿÿÿÿ8Õ¼™“/
+R
+java:S1141/"5Extract this nested try block into a separate method.(Ï¿õ÷8Õ¼™“/
+V
+java:S1128"4Remove this unused import 'java.io.DataInputStream'.(”•úºÿÿÿÿÿ8‚ªåò“/
+U	java:S106J"9Replace this use of System.out or System.err by a logger.(£‰ìÜ8Õ¼™“/
+U	java:S106G"9Replace this use of System.out or System.err by a logger.(²ß´Ú8—Ö›”/
+U	java:S106)"9Replace this use of System.out or System.err by a logger.(Â¾ƒí8§Ö¬ñ/
+H
+java:S1075"&Remove this hard-coded path-delimiter.(ÓõÑ¯ÿÿÿÿÿ8ÖÄŒô™/
+Z	java:S106:"9Replace this use of System.out or System.err by a logger.(ÿ¢Ù¾üÿÿÿÿ8Õ¼™“/

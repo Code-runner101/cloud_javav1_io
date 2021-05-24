@@ -1,30 +1,38 @@
 
-v
-java:S1104"TMake listView a static final constant or non-public and provide accessors if needed.(ßü’şıÿÿÿÿ8œË¾ø/
-X	java:S1257"<This block of commented-out lines of code should be removed.(ó×ÎÜ8İ×»”/
-a
-java:S2095N"DUse try-with-resources or close this "Socket" in a "finally" clause.(û‹¡…8Ê’–“/
-v
-java:S1104"YMake listViewCloud a static final constant or non-public and provide accessors if needed.(Ï—õ»8Ìç´Ñ’/
-a
-java:S2095a"DUse try-with-resources or close this "Stream" in a "finally" clause.(€´Õö8Šù¼”/
-s
-java:S1104"QMake input a static final constant or non-public and provide accessors if needed.(×ğ÷µüÿÿÿÿ8éÉË“/
-U	java:S106q"9Replace this use of System.out or System.err by a logger.(äÈ¥8¡¢Á”/
-T
-java:S1172 "2Remove this unused method parameter "actionEvent".(—‡İèøÿÿÿÿ8”ü”“/
 O
-java:S11726"2Remove this unused method parameter "actionEvent".(æıİÕ8´Áˆ“/
+java:S1172^"2Remove this unused method parameter "actionEvent".(æıİÕ8ø²ı¤˜/
+b
+java:S2095²"DUse try-with-resources or close this "Stream" in a "finally" clause.(»‡ ¾8ø²ı¤˜/
+Y	java:S125¯"<This block of commented-out lines of code should be removed.(ó×ÎÜ8ø²ı¤˜/
+X	java:S125_"<This block of commented-out lines of code should be removed.(ó×ÎÜ8ø²ı¤˜/
+b
+java:S2095¼"DUse try-with-resources or close this "Stream" in a "finally" clause.(€´Õö8ø²ı¤˜/
+R
+java:S1066‡"/Merge this if statement with the enclosing one.(Öã™ˆùÿÿÿÿ8¿ƒÔ˜/
 7
 java:S1220""Move this file to a named package.8œË¾ø/
-t
-java:S1104"RMake sendIn a static final constant or non-public and provide accessors if needed.(ˆá°êùÿÿÿÿ8‚®âË’/
-ƒ
-java:S18456"fRename method "sendOut" to prevent any misunderstanding/clash with field "sendOut" defined on line 25.(æıİÕ8’›ó“/
-u
-java:S1104"SMake sendOut a static final constant or non-public and provide accessors if needed.(¿°ŠÂşÿÿÿÿ8Ç‘éË’/
-a
-java:S2095X"DUse try-with-resources or close this "Stream" in a "finally" clause.(»‡ ¾8–æÊ‰”/
-X	java:S125T"<This block of commented-out lines of code should be removed.(ó×ÎÜ8ŸÕº”/
+[	java:S106¨"9Replace this use of System.out or System.err by a logger.(£‘šÑıÿÿÿÿ8ã‡Óò™/
+V	java:S106Î"9Replace this use of System.out or System.err by a logger.(äÈ¥8ø²ı¤˜/
+£
+java:S11865"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(’·“æüÿÿÿÿ8ôÖ«ò™/
 H
-java:S1128"+Remove this unused import 'lombok.Builder'.(§’Ğß8 ı©ó“/
+java:S1128	"+Remove this unused import 'lombok.Builder'.(§’Ğß8 ı©ó“/
+p
+java:S14502"SRemove the "auth" field and declare it as a local variable in the relevant methods.(§ª×…8ìŸÖ¤˜/
+U
+java:S1172›"2Remove this unused method parameter "actionEvent".(šè’Šøÿÿÿÿ8ÂÜÒò™/
+ƒ
+java:S1845^"fRename method "sendOut" to prevent any misunderstanding/clash with field "sendOut" defined on line 33.(æıİÕ8ø²ı¤˜/
+Y	java:S125‘"<This block of commented-out lines of code should be removed.(ØÅşÇ8Œßó™/
+X	java:S125?"<This block of commented-out lines of code should be removed.(®û€É8¬Ÿæó™/
+[	java:S106—"9Replace this use of System.out or System.err by a logger.(õ¼»’ÿÿÿÿÿ8¦§šÔ˜/
+T
+java:S1172E"2Remove this unused method parameter "actionEvent".(—‡İèøÿÿÿÿ8ø²ı¤˜/
+E
+java:S10682"(Remove this unused "auth" private field.(§ª×…8ìŸÖ¤˜/
+Y	java:S125Ğ"<This block of commented-out lines of code should be removed.(ªÛŞ¥8‘˜Ôó™/
+V	java:S106"9Replace this use of System.out or System.err by a logger.(¢ô Ò8ƒäóÓ˜/
+y
+java:S14501"WRemove the "nickname" field and declare it as a local variable in the relevant methods.(¥šÓßÿÿÿÿÿ8¶Úëó™/
+N
+java:S10681",Remove this unused "nickname" private field.(¥šÓßÿÿÿÿÿ8¶Úëó™/

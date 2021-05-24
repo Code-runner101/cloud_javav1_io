@@ -7,9 +7,9 @@
 <?import java.net.URL?>
 <AnchorPane prefHeight="565.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
 
-    <stylesheets>
-        <URL value="client/src/main/resources/style.css"/>
-    </stylesheets>
+<!--    <stylesheets>-->
+<!--        <URL value="client/src/main/resources/style.css"/>-->
+<!--    </stylesheets>-->
 
     <AnchorPane fx:id="sendingPanel">
         <ListView fx:id="listView" layoutX="478.0" layoutY="64.0" prefHeight="394.0" prefWidth="300.0" />
@@ -29,9 +29,10 @@
     </AnchorPane>
 
     <AnchorPane fx:id="authPanel" />
-     <PasswordField fx:id="passwordField" layoutX="242.0" layoutY="235.0" prefHeight="27.0" prefWidth="317.0" promptText="entry your login..." />
-     <TextField fx:id="loginFiled" layoutX="242.0" layoutY="187.0" prefHeight="27.0" prefWidth="317.0" promptText="entry your password..." />
-   <Label layoutX="303.0" layoutY="122.0" prefHeight="27.0" prefWidth="196.0" text="         Authentication ">
+        <TextField fx:id="loginFiled" layoutX="242.0" layoutY="187.0" prefHeight="27.0" prefWidth="317.0" promptText="entry your login..." />
+        <PasswordField fx:id="passwordField" onAction="#tryToAuth" layoutX="242.0" layoutY="235.0" prefHeight="27.0" prefWidth="317.0" promptText="entry your password..." />
+        <Button fx:id="authButton" onAction="#tryToAuth" layoutX="342" layoutY="283" prefHeight="27.0" prefWidth="150" text="SING IN" />
+        <Label layoutX="303.0" layoutY="122.0" prefHeight="27.0" prefWidth="196.0" text="         Authentication ">
       <font>
          <Font name="System Bold" size="17.0" />
       </font>

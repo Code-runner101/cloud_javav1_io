@@ -58,10 +58,10 @@
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>org.sqlite.JDBC</groupId>
-            <artifactId>sqlite-jdbc</artifactId>
-            <version>3.8.11.2</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.sqlite.JDBC</groupId>-->
+<!--            <artifactId>sqlite-jdbc</artifactId>-->
+<!--            <version>3.8.11.2</version>-->
+<!--        </dependency>-->
     </dependencies>
 </project>

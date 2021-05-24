@@ -1,27 +1,31 @@
 
 M
-java:S1128"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8ì‰éò“/
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ì‰éò“/
+M
+java:S1128"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8ì‰éò“/
+Z	java:S106?"9Replace this use of System.out or System.err by a logger.(Ğ»²­øÿÿÿÿ8‹ïá£˜/
+]	java:S1258"<This block of commented-out lines of code should be removed.(ôıÎÊøÿÿÿÿ8¬ë¶”/
+W
+java:S1128"5Remove this unused import 'java.util.ResourceBundle'.(ıÆ£¯øÿÿÿÿ8œ£éò“/
+U	java:S106M"9Replace this use of System.out or System.err by a logger.(Ú–âÉ8Úëğ/
 Z
 java:S1128"8Remove this unused import 'javafx.application.Platform'.(§“óùÿÿÿÿ8ì‰éò“/
-W
-java:S1128"5Remove this unused import 'java.util.ResourceBundle'.(ıÆ£¯øÿÿÿÿ8œ£éò“/
+M
+java:S1128"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8ì‰éò“/
 \
 java:S1128":Remove this unused import 'javafx.scene.control.ListView'.(ôõÂÄøÿÿÿÿ8‚ïïò“/
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(ğÉ®™8İ¿ï/
+K
+java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8œ£éò“/
+U	java:S106<"9Replace this use of System.out or System.err by a logger.(£‰ìÜ8ÌÍ¾ï/
+K
+java:S1066+"/Merge this if statement with the enclosing one.(‹¥ÍX8÷¾£˜/
 S
 java:S1128"6Remove this unused import 'javafx.fxml.Initializable'.(™ÎùÆ8ë¿éò“/
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ì‰éò“/
-]	java:S125+"<This block of commented-out lines of code should be removed.(ôıÎÊøÿÿÿÿ8¬ë¶”/
-U	java:S106>"9Replace this use of System.out or System.err by a logger.(Ú–âÉ8Úëğ/
-U	java:S106("9Replace this use of System.out or System.err by a logger.(ğÉ®™8İ¿ï/
 D
-java:S2189)""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8ó£Äï/
+java:S21896""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8ó£Äï/
 L
-java:S1128"/Remove this unused import 'java.io.DataOutput'.(‰Ş£¨8ÿ˜³ï/
-M
-java:S1128"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8ì‰éò“/
-U	java:S106/"9Replace this use of System.out or System.err by a logger.(£‰ìÜ8ÌÍ¾ï/
+java:S1128	"/Remove this unused import 'java.io.DataOutput'.(‰Ş£¨8ÿ˜³ï/
 Z
-java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8ì‰éò“/
-K
-java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8œ£éò“/
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8ì‰éò“/
+X	java:S125P"<This block of commented-out lines of code should be removed.(Ì»èß8èäô™/

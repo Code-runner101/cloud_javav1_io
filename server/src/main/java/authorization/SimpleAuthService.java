@@ -15,10 +15,7 @@ public class SimpleAuthService implements AuthService {
     public static void setConnection() throws ClassNotFoundException, SQLException {
         Class.forName("org.sqlite.JDBC");
         connection = DriverManager.getConnection("jdbc:sqlite:NICKNAMES.s2db");
-
     }
-
-
 
     public static void createDb() throws SQLException {
         statement = connection.createStatement();
@@ -28,7 +25,6 @@ public class SimpleAuthService implements AuthService {
 
     @Override
     public String getNicknameByLoginAndPassword(String login, String password) throws SQLException {
-        //проверка на null реализована в клиенте хендлере
         resultSet = statement.executeQuery("SELECT * FROM users WHERE login = '" + login + "' AND password = '" + password + "'");
         String nickname = resultSet.getString("nickname");
         return nickname;
@@ -95,14 +91,4 @@ public class SimpleAuthService implements AuthService {
 //        }
 //    }
 
-//    @Override
-//    public String getNicknameByLoginAndPassword(String login, String password) {
-//        for (UserData user : users) {
-//            if(user.login.equals(login) && user.password.equals(password)){
-//                return user.nickname;
-//            }
-//        }
-//
-//        return null;
-//    }
 }

@@ -14,41 +14,39 @@ import io.netty.handler.codec.serialization.ObjectEncoder;
 import lombok.extern.slf4j.Slf4j;
 import netty.serialize.SerialHandler;
 
+import java.sql.SQLException;
+
 @Slf4j
 public class NettyServer {
-//    public NettyServer() {
-//
-//        EventLoopGroup auth = new NioEventLoopGroup(1);
-//        EventLoopGroup worker = new NioEventLoopGroup();
 
-//        try {
-//            ServerBootstrap bootstrap = new ServerBootstrap();
-//            bootstrap.group(auth, worker)
-//                    .channel(NioServerSocketChannel.class)
-//                    .childHandler(new ChannelInitializer<SocketChannel>() {
-//                        @Override
-//                        protected void initChannel(SocketChannel channel) throws Exception {
-//                            // change
-//                            channel.pipeline().addLast(
-//                                    new ObjectDecoder(ClassResolvers.cacheDisabled(null)),
-//                                    new ObjectEncoder(),
-//                                    (ChannelHandler) new SerialHandler()
-//                            );
-//                        }
-//                    });
-//            ChannelFuture future = bootstrap.bind(8189).sync();
-//            log.debug("Server started");
-//            future.channel().closeFuture().sync(); // block
-//        } catch (Exception e) {
-//            log.error("e = ", e);
-//        } finally {
-//            auth.shutdownGracefully();
-//            worker.shutdownGracefully();
-//        }
-//    }
+    public NettyServer() throws SQLException, ClassNotFoundException {
 
-//    public static void main(String[] args) {
-//        new NettyServer();
-//    }
+        EventLoopGroup auth = new NioEventLoopGroup(1);
+        EventLoopGroup worker = new NioEventLoopGroup();
 
+        try {
+            ServerBootstrap bootstrap = new ServerBootstrap();
+            bootstrap.group(auth, worker)
+                    .channel(NioServerSocketChannel.class)
+                    .childHandler(new ChannelInitializer<SocketChannel>() {
+                        @Override
+                        protected void initChannel(SocketChannel channel) throws Exception {
+                            // change
+                            channel.pipeline().addLast(
+                                    new ObjectDecoder(ClassResolvers.cacheDisabled(null)),
+                                    new ObjectEncoder(),
+                                    (ChannelHandler) new SerialHandler()
+                            );
+                        }
+                    });
+            ChannelFuture future = bootstrap.bind(8189).sync();
+            log.debug("Server started");
+            future.channel().closeFuture().sync(); // block
+        } catch (Exception e) {
+            log.error("e = ", e);
+        } finally {
+            auth.shutdownGracefully();
+            worker.shutdownGracefully();
+        }
+    }
 }

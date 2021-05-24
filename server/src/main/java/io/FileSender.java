@@ -1,5 +1,7 @@
 package io;
 
+import authorization.AuthService;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.FileOutputStream;

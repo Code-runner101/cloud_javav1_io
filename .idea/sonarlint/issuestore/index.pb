@@ -54,3 +54,5 @@ c
 3server/src/main/java/authorization/AuthService.java,b/4/b40ca9bf9bd0478f668f19ef7490996e0ef7c321
 i
 9server/src/main/java/authorization/SimpleAuthService.java,b/6/b69ad8c622714fe0dce2ba17fd819c4b32908386
+>
+NICKNAMES.s2db,5/d/5dbe325e68fe86de24342626c2adf2c73a6a021c

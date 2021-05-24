@@ -7,8 +7,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import lombok.Builder;
+import model.Message;
 
-import javax.swing.*;
 import java.io.*;
 import java.net.Socket;
 import java.net.URL;
@@ -42,12 +42,16 @@ public class Controller implements Initializable {
     @FXML
     private AnchorPane authPanel;
 
+    private Socket socket;
     private DataInputStream in;
     private DataOutputStream out;
     private byte[] buffer = new byte[256];
     private String nickname;
     private boolean auth;
     int count;
+
+    public Controller() throws IOException {
+    }
 
     public void setAuthenticated(boolean auth){
         this.auth = auth;
@@ -56,9 +60,9 @@ public class Controller implements Initializable {
         authPanel.setVisible(!auth);
         authPanel.setManaged(!auth);
 
-        if (!auth){
-            nickname = "";
-        }
+//        if (!auth){
+//            nickname = "";
+//        }
 
     }
 
@@ -114,12 +118,60 @@ public class Controller implements Initializable {
     }
 
     private void init() throws IOException {
-        Socket socket = new Socket("localhost", 8899);
+        socket = new Socket("localhost", 8899);
         in = new DataInputStream(socket.getInputStream());
         out = new DataOutputStream(socket.getOutputStream());
     }
 
+    public void connect() {
+        try {
+            init();
+
+            new Thread(() -> {
+                try {
+                    while (true) {
+                        String str = in.readUTF();
+                        if (str.startsWith("/")) {
+                            if (str.startsWith(Message.AUTH_OK)) {
+                                nickname = str.split("\\s")[1];
+                                setAuthenticated(true);
+                                break;
+                            }
+                        }
+                    }
+                } catch (Exception e) {
+                    System.err.println("command error");
+                }
+//                finally {
+//                    setAuthenticated(true);
+//                }
+            }).start();
+
+        } catch (IOException e) {
+            System.err.println("connection false");
+        }
+    }
+
+    public void tryToAuth(javafx.event.ActionEvent actionEvent) throws IOException {
+        if (socket == null || socket.isClosed()) {
+            connect();
+        }
+
+            String msg = String.format("%s %s %s", Message.AUTH, loginFiled.getText().trim(),
+                    passwordField.getText().trim());
+            try {
+                out.writeUTF(msg);
+                passwordField.clear();
+                loginFiled.clear();
+//                setAuthenticated(true);
+            }catch (Exception e){
+                System.err.println("exception while auth");
+            }
+
+    }
+
     public void initialize(URL location, ResourceBundle resources) {
+        setAuthenticated(false);
 //        count++;
 //        String serverDirPath = serverPath + "/user" + count;
         try {
@@ -149,10 +201,12 @@ public class Controller implements Initializable {
             readThread.setDaemon(true);
             readThread.start();
 
-            } catch (IOException e) {
+        } catch (IOException e) {
 
-                System.out.println("socket error server");
-            }
+            System.out.println("socket error server");
+        }
+//        setAuthenticated(true);
+
         }
     }
 

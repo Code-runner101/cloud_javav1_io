@@ -1,8 +1,8 @@
 
 0
 java:S1220""Move this file to a named package.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(λεγÿÿÿÿÿ8Η„¨“/
-G
-java:S1128"*Remove this unused import 'model.Message'.(Ξ„ί8¬³Ϊ“/
 D
 java:S2189""Add an end condition to this loop.(οÿÿÿÿÿ8Η„¨“/
+G
+java:S1128"*Remove this unused import 'model.Message'.(Ξ„ί8¬³Ϊ“/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(λεγÿÿÿÿÿ8Η„¨“/
