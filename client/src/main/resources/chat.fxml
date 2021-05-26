@@ -4,7 +4,6 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<?import java.net.URL?>
 <AnchorPane prefHeight="565.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
 
 <!--    <stylesheets>-->
@@ -28,14 +27,15 @@
         <Button fx:id="sendOut" layoutX="348.0" layoutY="261.0" mnemonicParsing="false" onAction="#sendOut" prefHeight="44.0" prefWidth="97.0" text="GET &gt;" />
     </AnchorPane>
 
-    <AnchorPane fx:id="authPanel" />
+    <AnchorPane fx:id="authPanel" prefHeight="565.0" prefWidth="800.0">
         <TextField fx:id="loginFiled" layoutX="242.0" layoutY="187.0" prefHeight="27.0" prefWidth="317.0" promptText="entry your login..." />
-        <PasswordField fx:id="passwordField" onAction="#tryToAuth" layoutX="242.0" layoutY="235.0" prefHeight="27.0" prefWidth="317.0" promptText="entry your password..." />
-        <Button fx:id="authButton" onAction="#tryToAuth" layoutX="342" layoutY="283" prefHeight="27.0" prefWidth="150" text="SING IN" />
+        <PasswordField fx:id="passwordField" layoutX="242.0" layoutY="235.0" onAction="#tryToAuth" prefHeight="27.0" prefWidth="317.0" promptText="entry your password..." />
+        <Button fx:id="authButton" layoutX="326.0" layoutY="283.0" onAction="#tryToAuth" prefHeight="27.0" prefWidth="150" text="SING IN" />
         <Label layoutX="303.0" layoutY="122.0" prefHeight="27.0" prefWidth="196.0" text="         Authentication ">
-      <font>
-         <Font name="System Bold" size="17.0" />
-      </font>
-   </Label>
+        <font>
+             <Font name="System Bold" size="17.0" />
+        </font>
+        </Label>
+    </AnchorPane>
 
 </AnchorPane>

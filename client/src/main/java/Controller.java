@@ -126,9 +126,8 @@ public class Controller implements Initializable {
     public void connect() {
         try {
             init();
-
-            new Thread(() -> {
-                try {
+//            new Thread(() -> {
+//                try {
                     while (true) {
                         String str = in.readUTF();
                         if (str.startsWith("/")) {
@@ -145,12 +144,12 @@ public class Controller implements Initializable {
 //                finally {
 //                    setAuthenticated(true);
 //                }
-            }).start();
+//            }).start();
 
-        } catch (IOException e) {
-            System.err.println("connection false");
+//        } catch (IOException e) {
+//            System.err.println("connection false");
         }
-    }
+
 
     public void tryToAuth(javafx.event.ActionEvent actionEvent) throws IOException {
         if (socket == null || socket.isClosed()) {
@@ -163,7 +162,9 @@ public class Controller implements Initializable {
                 out.writeUTF(msg);
                 passwordField.clear();
                 loginFiled.clear();
+//                if (socket != null || !socket.isClosed()) {
 //                setAuthenticated(true);
+//                }
             }catch (Exception e){
                 System.err.println("exception while auth");
             }
@@ -174,6 +175,7 @@ public class Controller implements Initializable {
         setAuthenticated(false);
 //        count++;
 //        String serverDirPath = serverPath + "/user" + count;
+
         try {
             List<String> clientFiles = Files.list(Paths.get(clientPath))
                     .map(path -> path.getFileName().toString())
@@ -185,7 +187,7 @@ public class Controller implements Initializable {
             init();
 
             //закончились идеи как реализовать инициализацию listView не по общей директории, а именно по пользовательской
-            List<String> serverFiles = Files.list(Paths.get(serverPath))
+            List<String> serverFiles = Files.list(Paths.get(serverPath + "/" + nickname))
                     .map(path -> path.getFileName().toString())
                     .collect(Collectors.toList());
 

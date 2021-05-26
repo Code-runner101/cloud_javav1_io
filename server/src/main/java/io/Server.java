@@ -23,6 +23,8 @@ public class Server {
                 Socket socket = server.accept();
                 System.out.println("client entry log");
                 ClientHandler handler = new FileSender(socket, this);
+                subscribe(handler);
+                handler.run();
             }
         } catch (Exception e){
             System.err.println("server crash");
@@ -31,7 +33,7 @@ public class Server {
 
     public void subscribe(ClientHandler handler){
         clients.add(handler);
-        new Thread(handler).start();
+//        new Thread(handler).start();
     }
 
     public void broadcast(String message) throws IOException {

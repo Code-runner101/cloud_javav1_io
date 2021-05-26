@@ -15,14 +15,16 @@ public class FileSender extends ClientHandler {
     protected String serverPath = "server/sentFiles";
     protected String clientPath = "client/clientFiles";
     private byte buffer[];
+    String nickname;
 //    private static int count;
 
     public FileSender(Socket socket, Server server) throws IOException {
         super(socket, server);
         buffer = new byte[256];
+        nickname = getNickname();
 //        count++;
 
-        serverPath = serverPath + "/" + getNickname();
+        serverPath = serverPath + "/" + nickname;
         if (!Files.exists(Paths.get(serverPath))) {
             Files.createDirectory(Paths.get(serverPath));
         }
